@@ -1,0 +1,102 @@
+/* Style général */
+Body {
+    Display : flex ;
+    Justify-content : center ;
+    Align-items : center ;
+    Height : 100%;
+    Margin : 0 ;
+    padding: 0;
+    Background : url(img/SEEG1.png) no-repeat center center scroll ;
+    background-size: cover;
+    Font-family : Arial, sans-serif ;
+    overflow-y: auto;
+}
+
+@keyframes winEffect{
+    0%{
+        background-position: 50% 50%;
+    }
+    25%{
+        background-position: 48% 52%;
+    }
+    50%{
+        background-position: 52% 48%;
+    }
+    75%{
+        background-position: 49% 51%;
+    }
+    100%{
+        background-position: 50% 50%;
+    }
+}
+
+/* Conteneur principal */
+.container {
+    min-height: 80vh;
+    Background : rgba(255, 255, 255, 0.9) ;
+    Padding : 20px ;
+    Border-radius : 10px ;
+    Box-shadow : 0 4px 8px rgba(0, 0, 0, 0.2) ;
+    Text-align : center ;
+    Max-width : 600px ;
+    Width : 50% ;
+    position: relative;
+}
+
+/* Titre */
+H1, h3, h4, h5{
+    Margin-bottom : 15px ;
+    color: green;
+}
+
+/* Rotation continue du logo */
+.logo img {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    max-width: 100px;
+    height: auto;
+    Animation : rotation 5s linear infinite ;
+    background-color: white;
+    border-radius: 50px;
+}
+
+@keyframes rotation {
+    From {
+        Transform : rotate(0deg) ;
+    }
+    To {
+        Transform : rotate(360deg) ;
+    }
+}
+
+/* Formulaire */
+Form {
+    Text-align : left ;
+}
+
+/* Champs uniformes */
+Input, select, textarea {
+    Width : 100% ;
+    Padding : 10px ;
+    Margin : 10px 0 ;
+    Border : 1px solid #ccc ;
+    Border-radius : 5px ;
+    Font-size : 16px ;
+}
+
+/* Bouton */
+Button {
+    Width : 100% ;
+    Padding : 12px ;
+    Border : none ;
+    Background : #007BFF ;
+    Color : white ;
+    Border-radius : 5px ;
+    Cursor : pointer ;
+    Font-size : 16px ;
+}
+
+Button :hover {
+    Background : #0056b3 ;
+}

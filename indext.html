@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage SEEG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class= container >
+        <h1>NKONGÔ</h1>
+        <h5>Collectif Citoyen pour la Lutte contre la Vie Chère dans l’Ogooué-Maritime</h5>
+    
+        <div class= logo >
+            <img src="img/Logo Final 2.png" alt="Logo de NKONGÔ">
+        </div>
+    
+        <h1>Sondage sur la Qualité du Service de la SEEG  Port-Gentil</h1>
+        <h5>Merci de prendre quelques minutes pour répondre à ce sondage. Vos réponses nous aideront à interpeler la SEEG de Port-Gentil sur la qualité des services fournis.</h5>
+    
+        <form action="https://formspree.io/f/xgvollka" method= POST >
+            <div class= form-group >
+                <label for= name >Nom (Optionnel) :</label>
+                <input type= text  id= name name="Nom de l'émétteur"  placeholder= "Entrez votre nom" >
+            </div>
+            <div class= form-group >
+                <label for= issue >Depuis combien de temps êtes-vous client(e) de la SEEG ?</label>
+                <select id= issue  name= issue >
+                    <option value= coupure name="Coupure d’électricité">Moins d’un an</option>
+                    <option value= coupure name="1 à 3 ans"> 1 à 3 ans</option>
+                    <option value= coupure name="plus_de_3ansCoupure d’électricité">Plus de 3 ans</option>
+                </select>
+            </div>
+            <div class= form-group >
+                <label for= account >Numéro de compte SEEG (Optionnel) :</label>
+                <input type= text  id= account  name= account name="N° du compteur de l'émétteur" placeholder= "votre numéro de compteur SEEG" >
+            </div>
+    
+            <div class= form-group >
+                <label for= address >Arrondissement :</label>
+                <input type= text  id= address  name= "Arrondissement de l'éméteur"  placeholder= "votre arrondissement" >
+            </div>
+    
+            <div class= form-group >
+                <label for= address >Quartier :</label>
+                <input type= text  id= address  name= "Quartier de l'éméteur"  placeholder= "votre quartier" >
+            </div>
+    
+      
+            <div class= form-group >
+                <h3>Fourniture d'Électricité</h3>
+                <label for= issue >Qualité de l’électricité :</label>
+                <select name="qualite_electricite">
+                    <option value= excellente name="Excellente">Excellente</option>
+                    <option value= bonne name="Bonne"> Bonne</option>
+                    <option value= moyenne name="Moyenne">Moyenne</option>
+                    <option value= mauvaise name="Mauvaise">Mauvaise</option>
+                    <option value= très_mauvaise name="Très Mauvaise">Très Mauvaise</option>
+                </select>
+                <label>Subissez-vous des coupures fréquentes ?</label>
+                <select name="coupures">
+                    <option>Oui, plusieurs fois par semaine</option>
+                    <option>Oui, quelques fois par mois</option>
+                    <option>Rarement</option>
+                    <option>Non</option>
+                </select>
+            </div>
+    
+            <div class= form-group >
+                <label for= date >Quand avez-vous rencontré ce problème ?</label>
+                <input type= date  id= date  name= "date" >
+            </div>
+            <h3>Fourniture d'Eau</h3>
+            <label>Qualité de l’eau :</label>
+            <select name="qualite_eau">
+                <option>Excellente</option>
+                <option>Bonne</option>
+                <option>Moyenne</option>
+                <option>Mauvaise</option>
+            </select>
+            <h4>Selectionnez les appareils endommagés</h4>
+            <div class= form-group >
+                <label for= damaged-devices >Liste des appareils endommagés :</label>
+                <select id= damaged-devices  name= "appareils endommagés"  multiple>
+                    <option value= television >Télévision</option>
+                    <option value= refrigerator >Réfrigérateur</option>
+                    <option value= computer >Ordinateur</option>
+                    <option value= ac >Climatisation</option>
+                    <option value= other >Autre (précisez)</option>
+                </select>
+            </div>
+            <h4>Justifiez les appareils endommagés</h4>
+    
+            <div class= form-group >
+                <label for= device-image >Téléchargez une image de l’appareil endommagé :</label>
+                <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
+            </div>
+    
+            <div class= form-group >
+                <label for= document >Téléchargez un document justificatif (facture, rapport, etc.) :</label>
+                <input type= file  id= document  name= "document"  accept= .pdf,.docx,.jpg,.png >
+            </div>
+    
+            <div class= form-group >
+                <label for= comments >Suggestions ou commentaires supplémentaires :</label>
+                <textarea id= comments  name= "commentaires"  rows= 4  placeholder= "Entrez vos commentaires ici!" ></textarea>
+            </div>
+    
+            <div class= form-group >
+                <button type= submit >Soumettre</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
