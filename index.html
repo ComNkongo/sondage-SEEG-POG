@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sondage SEEG</title>
+    <title>NKONGÔ | Sondage SEEG POG</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,35 +21,44 @@
         <form action="https://formspree.io/f/xgvollka" method= POST >
             <div class= form-group >
                 <label for= name >Nom (Optionnel) :</label>
-                <input type= text  id= name name="Nom de l'émétteur"  placeholder= "Entrez votre nom" >
+                <input type= text  id= name name="Nom de l'émétteur"  placeholder= "Entrez votre nom" required>
+                <input type= email  id= name name="email de l'émétteur"  placeholder= "Adresse E-mail" required>
+                <input type= number  id= name name="Téléphone de l'émétteur"  placeholder= "Numéro de téléphone" required>
             </div>
             <div class= form-group >
                 <label for= issue >Depuis combien de temps êtes-vous client(e) de la SEEG ?</label>
-                <select id= issue  name= issue >
+                <select id= issue  name= "temps d'utilissation" >
                     <option value= coupure name="Coupure d’électricité">Moins d’un an</option>
                     <option value= coupure name="1 à 3 ans"> 1 à 3 ans</option>
                     <option value= coupure name="plus_de_3ansCoupure d’électricité">Plus de 3 ans</option>
                 </select>
             </div>
             <div class= form-group >
-                <label for= account >Numéro de compte SEEG (Optionnel) :</label>
-                <input type= text  id= account  name= account name="N° du compteur de l'émétteur" placeholder= "votre numéro de compteur SEEG" >
+                <label for= account >Numéro du compteur SEEG (Optionnel) :</label>
+                <input type= text  id= account  name= account name="N° du compteur de l'émétteur" placeholder= "votre numéro de compteur SEEG" required>
             </div>
     
             <div class= form-group >
                 <label for= address >Arrondissement :</label>
-                <input type= text  id= address  name= "Arrondissement de l'éméteur"  placeholder= "votre arrondissement" >
+                <input type= text  id= address  name= "Arrondissement de l'éméteur"  placeholder= "votre arrondissement" required>
             </div>
     
             <div class= form-group >
                 <label for= address >Quartier :</label>
-                <input type= text  id= address  name= "Quartier de l'éméteur"  placeholder= "votre quartier" >
+                <input type= text  id= address  name= "Quartier de l'éméteur"  placeholder= "votre quartier" required>
             </div>
-    
+            <div class= form-group >
+                <label for= address >Téléphone :</label>
+                <input type= number  id= address  name= "Téléphone de l'éméteur"  placeholder= "votre numéro de Téléphone" required>
+            </div>
+            <div class= form-group >
+                <label for= address >Adresse E-mail :</label>
+                <input type= email  id= address  name= "E-mail de l'éméteur"  placeholder= "votre adresse E-mail" required>
+            </div>
       
             <div class= form-group >
                 <h3>Fourniture d'Électricité</h3>
-                <label for= issue >Qualité de l’électricité :</label>
+                <label for= qualité >Qualité de l’électricité :</label>
                 <select name="qualite_electricite">
                     <option value= excellente name="Excellente">Excellente</option>
                     <option value= bonne name="Bonne"> Bonne</option>
@@ -68,7 +77,7 @@
     
             <div class= form-group >
                 <label for= date >Quand avez-vous rencontré ce problème ?</label>
-                <input type= date  id= date  name= "date" >
+                <input type= date  id= date  name= "date" required>
             </div>
             <h3>Fourniture d'Eau</h3>
             <label>Qualité de l’eau :</label>
@@ -92,24 +101,33 @@
             <h4>Justifiez les appareils endommagés</h4>
     
             <div class= form-group >
-                <label for= device-image >Téléchargez une image de l’appareil endommagé :</label>
+                <label for= device-image >Téléversez des images des produits et appareils endommagés :</label>
+                <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
+                <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
                 <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
             </div>
     
             <div class= form-group >
-                <label for= document >Téléchargez un document justificatif (facture, rapport, etc.) :</label>
+                <label for= document >Téléversez des justificatifs des produits et appareils(facture, rapport, etc.) :</label>
+                <input type= file  id= document  name= "document"  accept= .pdf,.docx,.jpg,.png >
                 <input type= file  id= document  name= "document"  accept= .pdf,.docx,.jpg,.png >
             </div>
     
             <div class= form-group >
                 <label for= comments >Suggestions ou commentaires supplémentaires :</label>
-                <textarea id= comments  name= "commentaires"  rows= 4  placeholder= "Entrez vos commentaires ici!" ></textarea>
+                <textarea id= comments  name= "commentaires"  rows= 4  placeholder= "Entrez vos commentaires et suggestions ici!" ></textarea>
             </div>
     
             <div class= form-group >
                 <button type= submit >Soumettre</button>
             </div>
+            <p>Merci pour votre participation ! Vos réponses nous aideront à rapidement interpeler les autorités en charge de l'eau de et l'énergie</p>
+            <br><br>
         </form>
     </div>
+    <footer>
+        <a href="https://lionel-johnson.github.io/LionelConcept">&copy LionelConcept | 02/2025 </a>
+    </footer>
+
 </body>
 </html>

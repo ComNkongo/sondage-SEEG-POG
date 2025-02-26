@@ -87,7 +87,7 @@ Input, select, textarea {
 
 /* Bouton */
 Button {
-    Width : 100% ;
+    Width : 50% ;
     Padding : 12px ;
     Border : none ;
     Background : #007BFF ;
@@ -95,8 +95,20 @@ Button {
     Border-radius : 5px ;
     Cursor : pointer ;
     Font-size : 16px ;
+    position: center;
 }
 
 Button :hover {
-    Background : #0056b3 ;
+    Background : #06783c ;
+}
+
+/* Footer fixe */
+Footer {
+    Text-align : center ;
+    Padding : 10px ;
+    Background : rgba(0, 0, 0, 0.8) ;
+    Color : white ;
+    Position : fixed ;
+    Width : 100% ;
+    Bottom : 0 ;
 }
