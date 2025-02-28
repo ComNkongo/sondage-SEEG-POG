@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NKONGÔ | Sondage SEEG POG</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <div class= container >
@@ -91,17 +92,30 @@
             <div class= form-group >
                 <label for= damaged-devices >Liste des appareils endommagés :</label>
                 <select id= damaged-devices  name= "appareils endommagés"  multiple>
-                    <option value= television >Télévision</option>
-                    <option value= refrigerator >Réfrigérateur</option>
-                    <option value= computer >Ordinateur</option>
-                    <option value= ac >Climatisation</option>
-                    <option value= other >Autre (précisez)</option>
+                    <option value= Télévision >Télévision</option>
+                    <option value= Réfrigerator >Réfrigérateur</option>
+                    <option value= Ordinateur >Ordinateur</option>
+                    <option value= Climatiseur >Climatiseur</option>
+                    <option value= Onduleur >Onduleur</option>
+                    <option value= Sono >Sono</option>
+                    <option value= congélateur >Congélateur</option>
+                    <option value= Lave-linge >Lave-Linge</option>
+                    <option value= Sèche-Linge >Sèche-Linge</option>
+                    <option value= Lave-Vaisselle >Lave-Vaisselle</option>
+                    <option value= Four Électrique>Four Électrique</option>
+                    <option value= Autre >Autre</option>
+                    <input type= text  id= autre  name= "précision d'appareil"  placeholder= "(autre) précisez vos appareils ici!">
                 </select>
             </div>
+            <div class= form-group >
+                <label for= quantité >Quantité d'appareils endommagés :</label>
+                <input type= number  id= quantité  name= "Quantité d'appareils endommagés"  placeholder= "Renseignez la quantité de vos appareils" required>
+            </div>
             <h4>Justifiez les appareils endommagés</h4>
-    
             <div class= form-group >
                 <label for= device-image >Téléversez des images des produits et appareils endommagés :</label>
+                <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
+                <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
                 <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
                 <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
                 <input type= file  id= device-image  name= "images-appareil"  accept= image/* >
@@ -109,6 +123,9 @@
     
             <div class= form-group >
                 <label for= document >Téléversez des justificatifs des produits et appareils(facture, rapport, etc.) :</label>
+                <input type= file  id= document  name= "document"  accept= .pdf,.docx,.jpg,.png >
+                <input type= file  id= document  name= "document"  accept= .pdf,.docx,.jpg,.png >
+                <input type= file  id= document  name= "document"  accept= .pdf,.docx,.jpg,.png >
                 <input type= file  id= document  name= "document"  accept= .pdf,.docx,.jpg,.png >
                 <input type= file  id= document  name= "document"  accept= .pdf,.docx,.jpg,.png >
             </div>
@@ -128,6 +145,6 @@
     <footer>
         <a href="https://lionel-johnson.github.io/LionelConcept">&copy LionelConcept | 02/2025 </a>
     </footer>
-
+    <script src=script.js></script>
 </body>
 </html>
